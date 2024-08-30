@@ -49,7 +49,7 @@ const checkwinner =()=>{
 
         if(pos1 !="" && pos2 !="" && pos3 !="")
             {
-                if(pos1===pos1 && pos2===pos3)
+                if(pos1===pos2 && pos2===pos3)
                     {
                         showWinner(pos3);
                         return true;
@@ -66,7 +66,7 @@ const showWinner = (winner) => {
 
 const resetGame=()=>
     {
-        turnO=true;
+        turno=true;
         count=0;
         enableboxes();
         msgContainer.classList.add("hide");
